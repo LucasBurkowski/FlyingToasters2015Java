@@ -33,4 +33,8 @@ public class ElevatorSubsystem extends Subsystem{
 		double Potentiometer = Pot.getVoltage();
 		return Potentiometer;
 	}
+	
+	public boolean LimitSwitch(){
+		return BottomLimit.get();
+	}
 }
